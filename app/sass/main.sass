@@ -66,20 +66,20 @@ body
 	font-weight: 900
 .h2, h2
 	font-family: $default-font
-	font-weight: 900
-	font-size: 25px
+	font-weight: 500
+	font-size: 36px
 	color: $dark
 .h3, h3, .h4, h4, .h5, h5
 	font-family: $default-font
-	font-size: 18px
-	font-weight: 900
+	font-size: 30px
+	font-weight: 500
 	color: $dark
 
 p
 	font-family: $default-font
-	font-size: 16px
+	font-size: 15px
 	color: $dark
-	font-weight: 300
+	font-weight: 500
 	line-height: 26px
 a
 	text-decoration: none
@@ -329,50 +329,39 @@ html.mm-opening .mm-menu~.mm-slideout
 		position: relative
 		padding-bottom: 55px
 		margin-bottom: 14px
-		&:after
-			content: ''
-			position: absolute
-			width: 3px
-			height: 50px
-			background: $accent
-			left: 50%
-			transform: translateX(-50%)
-			bottom: -6px
 	h2
+		font-size: 30px
+		font-weight: 500
+		margin: 15px 0
+		margin-top: 30px
+		color: $dark
+	h3
 		font-size: 24px
 		font-weight: 500
 		margin: 15px 0
 		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h3
-		font-size: 22px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
+		color: $dark
 	h4
 		font-size: 20px
 		font-weight: 500
 		margin: 15px 0
 		margin-top: 30px
 		text-transform: uppercase
-		color: $accent
+		color: $dark
 	h5
 		font-size: 18px
 		font-weight: 500
 		margin: 15px 0
 		margin-top: 30px
 		text-transform: uppercase
-		color: $accent
+		color: $dark
 	h6
 		font-size: 16px
 		font-weight: 500
 		margin: 15px 0
 		margin-top: 30px
 		text-transform: uppercase
-		color: $accent
+		color: $dark
 	b
 		font-size: 16px
 		font-weight: 900
@@ -383,7 +372,7 @@ html.mm-opening .mm-menu~.mm-slideout
 		max-width: 850px
 		font-weight: 500
 	a
-		color: $accent
+		color: $dark
 		&:hover, &:focus
 			text-decoration: underline
 	img
@@ -704,26 +693,48 @@ html.mm-opening .mm-menu~.mm-slideout
 		color: #ffffff
 .btn-accent
 	background: $accent
-	text-align: right
+	text-align: center
 	padding: 10px 45px
-	border-radius: 5px
-	font-size: 23px
+	font-size: 15px
 	color: #FFFFFF
+	display: flex
+	justify-content: center
+	align-items: center
 	&:hover, &:focus
 		background: $dark
 		color: #FFFFFF
+.btn-grey
+	background: $grey
+	text-align: center
+	padding: 10px 45px
+	font-size: 15px
+	color: #95989a
+	display: flex
+	justify-content: center
+	align-items: center
+	&:hover, &:focus
+		background: $grey
+		color: #95989a
+.btn-icon
+	display: flex
+	align-items: center
+	justify-content: center
+	.txt
+		padding-left: 12px
+		font-size: 15px
 .btn-white
 	background: #ffffff
 	display: inline-block
 	color: $dark
-	padding: 11px 35px
-	border-radius: 120px
+	padding: 6px 20px
 	font-size: 16px
 	border: solid 1px transparent
-	-webkit-appearance: button
+	svg
+		transition: none
+	.txt
+		padding-left: 12px
 	&:hover, &:focus
-		background: $accent
-		color: #ffffff
+		color: $accent
 		cursor: pointer
 		border-color: #ffffff
 .btn-dark
@@ -771,17 +782,19 @@ html.mm-opening .mm-menu~.mm-slideout
 
 
 .btn-transparent
+	background: #FFFFFF
+	text-align: center
+	padding: 10px 45px
+	font-size: 15px
+	color: $dark
 	border: solid 1px $accent
-	border-radius: 5px
-	padding: 10px 50px
-	font-size: 23px
-	svg
-		position: relative
-		top: 7px
-		right: 10px
-	&:after
-		content: ''
-		width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	&:hover, &:focus
+		background: $dark
+		color: #FFFFFF
+		border-color: $dark
 /*buttons end*/
 
 /*my custom select start*/
@@ -844,6 +857,312 @@ html.mm-opening .mm-menu~.mm-slideout
 /*my custom select END*/
 
 /*Project start*/
+
+#my-header
+	width: 100%
+	.lvl1
+		background-color: $grey
+		min-height: 30px
+		.menu-lvl1
+			ul
+				padding: 0px
+				margin: 0px
+				li
+					display: inline-block
+					margin-right: 45px
+					a
+						font-size: 15px
+						font-weight: 500
+					&:last-child
+						margin-right: 0px
+	.lvl2
+		background: $accent
+		min-height: 80px
+		.phone-link
+			font-size: 20px
+.basket-btn
+	position: relative
+	&:after
+		content: attr(cont)
+		position: absolute
+		top: -8px
+		right: -8px
+		background: #FFFFFF
+		border: solid 1px $accent
+		color: $dark
+		width: 24px
+		height: 24px
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+.main-menu
+	ul
+		margin: 0px
+		list-style: none
+		border: solid 1px $grey
+		padding: 10px 0
+		li
+			border-bottom: 1px solid $grey
+			padding: 10px 20px
+			&:last-child
+				border: none
+			.svg-cont
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 24px
+			a
+				display: flex
+				align-items: center
+				font-size: 15px
+			.txt
+				padding-left: 20px
+				display: inline-block
+				line-height: 16px
+.logo-cont
+	.discr
+		color: #FFFFFF
+		font-size: 13px
+.find-block
+	.search-btn
+		button
+			background: $grey
+			cursor: pointer
+			&:hover
+				.svg path
+					fill: #ffffff
+.phone-link
+	color: #FFFFFF
+	&:hover
+		text-decoration: underline
+		color: #FFFFFF
+.eq-link
+	padding: 10px
+	.txt
+		color: #FFFFFF
+		padding-left: 10px
+		font-size: 13px
+		position: relative
+		&:after
+			content: attr(cont)
+			position: absolute
+			top: -17px
+			right: -17px
+			background: #FFFFFF
+			border: solid 1px $accent
+			color: $dark
+			width: 24px
+			height: 24px
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+	.equal-cont
+		width: 12px
+		svg path
+			fill: #ffffff
+
+.main-slider
+	width: 100%
+	margin-bottom: 0
+	overflow: hidden
+	max-height: 360px
+	//top: -9px
+	.item
+		position: relative
+		height: 360px
+		width: 100%
+		background: $grey-l
+		background-size: cover
+		&:after
+			content: ''
+			position: absolute
+			top: 0px
+			bottom: 0px
+			left: 0px
+			right: 0px
+			background: rgba($dark, 0.4)
+		&.slick-active
+			.slider-content
+				opacity: 1
+		.slider-content
+			//top: 50%
+			//transform: translateY(-50%)
+			//position: absolute
+			max-width: 920px
+			width: 100%
+			opacity: 0
+			transition: opacity 1s ease, left .5s ease
+			transition-delay: .2s
+			text-align: left
+			padding: 30px
+			padding-left: 0px
+			position: relative
+			z-index: 2
+			.h2, h2
+				font-size: 45px
+				font-weight: 900
+				color: #FFFFFF
+				position: relative
+				max-width: 50%
+				text-transform: uppercase
+			p
+				font-size: 25px
+				color: $dark
+				line-height: 25px
+				font-weight: 500
+				margin-bottom: 35px
+			.top-txt
+				font-weight: 900
+				font-size: 16px
+				color: #FFFFFF
+				position: relative
+				top: -50px
+		.bg
+			width: 100%
+			min-height: 450px
+			background-size: cover!important
+			opacity: 1
+			background-position: right!important
+	.slick-dots
+		bottom: 10px
+		border-radius: 50px
+		li
+			margin: 0px
+			&:first-child
+				margin-left: 5px
+			&:last-child
+				margin-right: 5px
+	.slick-dots li.slick-active button:before
+		color: $accent
+	.slick-dots li button:before
+		color: $grey-l
+		opacity: 1
+		font-size: 10px
+		line-height: 22px
+.slick-dotted.slick-slider
+	margin-bottom: 0px
+
+.catalog
+	.item-cont
+		&>.item
+			border: solid 1px $grey
+			padding: 15px
+			.prev
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				min-height: 230px
+				position: relative
+				cursor: pointer
+				&:hover
+					.fast-v
+						display: flex
+				.fast-v
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: 0px
+					justify-content: center
+					align-items: center
+					width: 100%
+					background: rgba(228, 228, 228, 0.9)
+					cursor: pointer
+					display: none
+					max-height: 26px
+					.txt
+						padding-left: 14px
+						font-size: 15px
+						color: #748c92
+					.svg-cont
+						width: 14px
+						display: flex
+						align-items: center
+						svg
+							g
+								path
+									fill: #748c92
+
+			.toolbar
+				display: flex
+				justify-content: space-between
+				.addons
+					display: flex
+					justify-content: flex-end
+					cursor: pointer
+					.item-a
+						margin-left: 10px
+			.btn-icon
+				margin-bottom: 15px
+				margin-top: 5px
+.fast-v-popup
+	max-width: 850px
+	//border: solid 1px $accent
+	background: transparent
+	padding: 0px
+	overflow: hidden
+	.fancybox-close-small
+		top: 28px
+	.container
+		max-height: 80vh
+		height: 700px
+		min-height: 660px
+		.row
+			height: 100%
+	.fotorama
+		//width: 100%
+	.left-b
+		background: #FFFFFF
+		display: flex
+		align-items: center
+		border: solid 1px $grey
+		box-shadow: 7px 6px 20px 0 rgba(0,0,0,.16)
+		position: relative
+		z-index: 2
+		height: 100%
+		justify-content: center
+	.right-b
+		background: #FFFFFF
+		padding-top: 60px
+		padding-bottom: 30px
+		padding-left: 30px
+		padding-right: 30px
+		height: auto
+		margin: 32px 0px
+		border: solid 1px #95989a
+		left: -2px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.price
+			margin: 20px 0
+			font-size: 24px
+		.h4
+			font-size: 24px
+		.btn-c
+			max-width: 230px
+			a
+				margin-bottom: 15px
+				max-height: 40px
+		.eq-btn
+			justify-content: flex-start
+			&:hover
+				background: #FFFFFF
+			.txt
+				color: $accent
+				padding-right: 12px
+.fotorama
+	.fotorama__arr.fotorama__arr--next:after
+		background: transparent!important
+.fotorama__thumb-border
+	border: solid 1px $grey
+.fotorama__nav
+	text-align: left
+.fotorama__nav--thumbs .fotorama__nav__frame
+	width: 119px
+	height: 90px
+
 .fotorama__nav__shaft
 	margin-top: 15px
 .fotorama__nav:after, .fotorama__stage:after
@@ -852,6 +1171,41 @@ html.mm-opening .mm-menu~.mm-slideout
 .fotorama__nav:before, .fotorama__stage:before
 	background-image: none
 	background: none
- /*Project end*/
+
+#my-footer
+	border-top: solid 1px $accent
+	margin-top: 30px
+	padding: 30px 0px
+	ul
+		padding: 0px
+		margin: 0px
+		list-style: none
+	.basket-btn
+		background: $accent
+		color: #FFFFFF
+		&:hover
+			border-color: $accent
+	.btn-white
+		background: $accent
+		color: #FFFFFF
+		&:hover
+			border-color: $accent
+.fancybox-is-open .fancybox-bg
+	background: rgba($grey-dark, 0.7)
+	opacity: 1
+.fancybox-close-small:after
+	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px"> <text font-family="FontAwesome" fill="rgb(43, 43, 43)" font-size="15px" x="0px" y="10.844px">&#61453;</text></svg>')
+
+.socials
+	display: flex
+	justify-content: flex-start
+	.item-s
+		margin-right: 25px
+		&:last-child
+			margin-right: 0px
+	a
+		display: block
+		height: 25px
+/*Project end*/
 
 @import "media" // Всегда в конце

@@ -1,3 +1,21 @@
+
+function MainSliderInit(){//слайдер на главной странице
+    $('.main-slider').slick({
+        dots: true,
+        infinite: true,
+        //dotsClass: 'slick-dots container d-flex align-items-center justify-content-end',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: false
+                }
+            }
+        ]
+    });
+}
+
 $(function() {
 
     $.datetimepicker.setLocale('ru');

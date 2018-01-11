@@ -1,6 +1,38 @@
+function showConfig() {
+    //allCfg
+    $(document).on('click', '#allCfg', function () {
+        if($('.tabs-content .tab-cnt').find('table').hasClass('show-all')){
+            $('.tabs-content .tab-cnt').find('table').removeClass('show-all');
+            $('#allCfg').text('Все характеристики');
+            $("html, body").animate({ scrollTop: $('.tabs-c .tabs-is').offset().top - 50}, 600);
+        }else{
+            $('.tabs-content .tab-cnt').find('table').addClass('show-all');
+            $('#allCfg').text('Свернуть');
+        } 
+    });
+    $(document).on('click', '#allFeedback', function () {
+        if($('.tabs-content .feedback-c').hasClass('show-all')){
+            $('.tabs-content .feedback-c').removeClass('show-all');
+            $('#allCfg').text('Все отзывы');
+            $("html, body").animate({ scrollTop: $('.tabs-c .tabs-is').offset().top - 50}, 600);
+        }else{
+            $('.tabs-content .feedback-c').addClass('show-all');
+            $('#allFeedback').text('Свернуть');
+        }
+    });
+    
+    $(document).on('click', '.tabs-is .tabs-btns .tb-i', function () {
+        $('.tabs-is .tabs-btns .tb-i').removeClass('active');
+        $('.tabs-content .tab-cnt').removeClass('active');
+        $(this).addClass('active');
+        $($(this).data().trigger).addClass('active');
+    });
+    $(document).on('click', '#newFb', function () {
+        $(this).hide();
+        $('.fb-form-cont').fadeIn();
+    });
 
- 
-
+}
 
 function MainSliderInit(){//слайдер на главной странице
     $('.main-slider').slick({

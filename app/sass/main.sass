@@ -381,7 +381,7 @@ html.mm-opening .mm-menu~.mm-slideout
 		font-size: 16px
 		font-weight: 900
 	p
-		font-size: 16px
+		font-size: 15px
 		line-height: 26px
 		margin-bottom: 20px
 		max-width: 850px
@@ -683,10 +683,14 @@ html.mm-opening .mm-menu~.mm-slideout
 	.btn-accent
 		font-size: 18px
 		cursor: pointer
+.accent-txt
+	color: $accent
 /*buttons start*/
 .btn-underline
 	border-bottom: 1px $accent dashed
 	color: #ffffff
+	&.short-btn
+		display: inline-block
 	&:hover, &:focus
 		color: $accent
 .btn-green
@@ -696,6 +700,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	padding: 10px 45px
 	border-radius: 120px
 	font-size: 16px
+	&.short-btn
+		display: inline-block
 	&:hover, &:focus
 		background: darken($accent, 5)
 		color: #ffffff
@@ -708,6 +714,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	display: flex
 	justify-content: center
 	align-items: center
+	&.short-btn
+		display: inline-block
 	&:hover, &:focus
 		background: $dark
 		color: #FFFFFF
@@ -720,6 +728,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	display: flex
 	justify-content: center
 	align-items: center
+	&.short-btn
+		display: inline-block
 	&:hover, &:focus
 		background: $grey
 		color: #95989a
@@ -727,6 +737,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	display: flex
 	align-items: center
 	justify-content: center
+	&.short-btn
+		display: inline-block
 	.txt
 		padding-left: 12px
 		font-size: 15px
@@ -737,6 +749,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	padding: 6px 20px
 	font-size: 16px
 	border: solid 1px transparent
+	&.short-btn
+		display: inline-block
 	svg
 		transition: none
 	.txt
@@ -754,6 +768,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	font-size: 16px
 	border: none
 	text-decoration: none
+	&.short-btn
+		display: inline-block
 	&:hover, &:focus
 		background: lighten($dark, 5)
 		color: #ffffff
@@ -767,6 +783,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	border-radius: 150px
 	color: #ffffff
 	min-height: 48px
+	&.short-btn
+		display: inline-block
 	&::-webkit-input-placeholder
 		color: #ffffff
 		opacity: 1
@@ -799,6 +817,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	display: flex
 	justify-content: center
 	align-items: center
+	&.short-btn
+		display: inline-block
 	&:hover, &:focus
 		background: $dark
 		color: #FFFFFF
@@ -1502,4 +1522,149 @@ label:hover:before
 
 /*Project end*/
 
+/*Product start*/
+.tabs-c
+	.tabs-is
+		border: solid 1px $grey
+		padding: 30px 25px
+		margin-bottom: 30px
+		.tabs-btns
+			display: flex
+			border-bottom: solid 1px $grey
+			margin-bottom: 20px
+			.tb-i
+				margin-right: 35px
+				position: relative
+				bottom: -2px
+				cursor: pointer
+				a
+					color: #95989a
+				&.active
+					border-bottom: solid 3px $accent
+		.tabs-content
+			.tab-cnt
+				display: none
+				animation: fadeEffect .3s
+				&.active
+					display: block
+				table
+					width: 100%
+					&.show-all
+						tbody tr
+							display: table-row!important
+					tbody
+						tr
+							border-bottom: solid 1px $grey
+							animation: fadeEffect .3s
+							&:last-child
+								border: none
+							&:nth-child(n+10)
+								display: none
+							td
+								width: 50%
+								padding-right: 10px
+								vertical-align: top
+								padding: 5px 0px
+								padding-right: 10px
+				.all-conf
+					color: $accent
+					text-decoration: underline
+					margin-top: 30px
+					display: inline-block
+					&.all-fb
+						margin-top: 0px
+.feedback-c
+	margin: 30px 0px
+	&.show-all
+		.fb-item
+			display: block!important
+	.fb-item
+		border-bottom: solid 1px $grey
+		margin-bottom: 30px
+		animation: fadeEffect .3s
+		&:nth-child(n+4)
+			display: none
+		.fb-title
+			color: #95989a
+.fb-form-cont
+	display: none
+	.fb-frm
+		textarea
+			width: 100%
+			resize: none
+			padding-left: 20px
+			border: solid 1px $grey
+			margin-bottom: 10px
+		input
+			width: 100%
+			margin-bottom: 15px
+		.btn-accent
+			margin-bottom: 10px
+.fotorama__thumb-border
+	border-color: $accent
+.fotorama__thumb
+	position: relative
+	&:after
+		content: ''
+		background: transparent
+		border: solid 1px $grey
+		left: 0px
+		top: 0px
+		right: 0px
+		bottom: 0px
+		position: absolute
+.fotorama__nav
+	text-align: left
+.fotorama__nav--thumbs .fotorama__nav__frame
+	width: 119px
+	height: 90px
+.fotorama__nav__shaft
+	margin-top: 15px
+.fotorama__nav:after, .fotorama__stage:after
+	background-image: none
+	background: none
+.fotorama__nav:before, .fotorama__stage:before
+	background-image: none
+	background: none
+.fotorama__wrap
+	margin: auto
+
+.vitrina
+	margin-bottom: 30px
+	.price
+		font-size: 24px
+		margin-bottom: 10px
+		font-weight: 700
+	.btn-c
+		a
+			display: inline-block
+			margin-right: 20px
+			margin-bottom: 10px
+			&.btn-transparent
+				position: relative
+				top: -1px
+	.addons
+		margin: 30px 0px
+		.addons-i
+			font-size: 15px
+			display: flex
+			align-items: center
+			margin-bottom: 15px
+			.nothing-t
+				padding-left: 36px
+			&.bell-i a
+				display: flex
+				align-items: center
+				&:hover
+					text-decoration: underline
+					color: $dark
+			.svg-cont
+				width: 30px
+				height: 30px
+				display: flex
+				align-items: center
+				justify-content: center
+			.txt
+				padding-left: 6px
+/*Product end*/
 @import "media" // Всегда в конце

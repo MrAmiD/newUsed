@@ -14,8 +14,21 @@
     width: 180px
   .eq-catalog
     margin-right: 0px
+  .fotorama
+    margin: 20px 0px
+  .vitrina
+    margin-bottom: 0px
+  .vitrina .addons .addons-i .nothing-t
+    margin-bottom: 0px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+  .tabs-c .tabs-is .tabs-btns
+    white-space: nowrap
+    overflow-x: auto
+    overflow-y: hidden
+    &::-webkit-scrollbar
+      width: 0px
+      background: transparent
   .fast-v-popup .fancybox-close-small
     top: 0px
   .fast-v-popup
@@ -77,6 +90,11 @@
     padding: 0px
   .sort-c .sort-i
     margin-left: 12px
+  .tabs-c .tabs-is .tabs-content .tab-cnt
+    overflow: auto
+  .tabs-c .tabs-is .tabs-content .tab-cnt table tbody
+    min-width: 600px
+    display: block
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

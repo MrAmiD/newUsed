@@ -1,4 +1,7 @@
 
+ 
+
+
 function MainSliderInit(){//слайдер на главной странице
     $('.main-slider').slick({
         dots: true,

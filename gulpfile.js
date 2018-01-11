@@ -35,7 +35,9 @@ gulp.task('js', ['common-js'], function() {
         'app/js/jquery.maskedinput.min.js',
 		'app/libs/Slick-slider/slick.min.js',
 		'app/libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js',
-		'app/libs/datetimepicker-master/build/jquery.datetimepicker.full.min.js', 
+		'app/libs/datetimepicker-master/build/jquery.datetimepicker.full.min.js',
+		'app/libs/noUiSlider/nouislider.min.js',
+		'app/libs/wnumb-1.1.0/wNumb.js'
 		//'app/libs/jquery-ui-1.12.1.custom/jquery-ui.min.js',
 		// 'app/libs/Datetimepicker/datepicker-ru.js',
 		// 'app/libs/bootstrap-material-datetimepicker-gh-pages/js/moment-with-locales.min.js',

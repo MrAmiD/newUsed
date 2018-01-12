@@ -412,6 +412,16 @@ html.mm-opening .mm-menu~.mm-slideout
 		//	top: 0px
 	table
 		width: 100%
+		table-layout: fixed
+		position: relative
+		&:after
+			content: ''
+			top: 0px
+			left: 0px
+			right: -1px
+			bottom: 0px
+			border: solid 1px #FFFFFF
+			position: absolute
 		tbody
 			min-width: 700px
 		&.compectCount
@@ -427,30 +437,32 @@ html.mm-opening .mm-menu~.mm-slideout
 				background-color: #FFFFFF
 				border: solid 1px #d9d9d9
 		tr
-			&:nth-child(odd)
-				background: #f7f7f7
+			&:first-child
+				td
+					font-weight: 700
 			td, th
 				border: solid 1px #d9d9d9
-				padding-left: 15px
-				padding-right: 15px
-				text-align: center
+				padding: 15px
+				text-align: left
+				font-size: 13px
+				vertical-align: top
 	ul
 		list-style: none
 		margin-top: 20px
+		padding-left: 15px
 		li
 			position: relative
 			font-weight: 500
-			font-size: 16px
-			margin-bottom: 20px
+			font-size: 15px
+			margin-bottom: 0px
 			&:before
-				content: ''
+				content: '☑'
 				display: block
-				width: 10px
-				height: 10px
+				color: $accent
 				position: absolute
-				left: -25px
-				top: 7px
-				background: $accent
+				font-size: 15px
+				left: -15px
+				top: 0px
 				border-radius: 50%
 			ul
 				margin-top: 0px

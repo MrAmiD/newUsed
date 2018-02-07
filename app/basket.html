@@ -349,7 +349,7 @@
 	</div>
 </div>
 <div id="my-content" class="main-page mt-4">
-	<div class="container">
+	<div class="container basket-container">
 		<div class="row">
 			<div class="col-12 col-lg-12 col-xl-3 main-menu  mb-4">
 				<div class="m-cont">
@@ -514,74 +514,253 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-12 col-xl-9">
-				<div class="row">
-					<div class="col-12 bread-c">
-						<ul class="breadcrumb">
-							<li><a href="/">Главная</a></li>
-							<li><a href="/">Каталог</a></li>
-							<li class="active"> <span>Смартфоны</span></li>
-						</ul>
+				<div class="row steps-cont">
+					<div class="col-12 col-md-6 steps-tr step1-trigger active">
+						Ваша корзина
+					</div>
+					<div class="col-12 col-md-6 steps-tr step2-trigger">
+						Оформление заказа
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-12">
-						<h1 class="h1">
-							Корзина
-						</h1>
-					</div>
-				</div>
-				<div class="row basket-c">
-					<div class="col-12 col-md-6 col-lg-6">
-						<div class="row">
-							<div class="col-12">
-								<div class="good-item">
-									<div class="discr-s">
-										<a href="">Apple watch 2 series
-											42 White</a>
-										<div class="prev" style="background-image: url('img/item2.png')"></div>
-									</div>
 
-									<div class="price">
-										26 500 ₧
-									</div>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="txt">
-											Количество
-										</div>
-										<div class="number">
-											<span class="minus c-btn">-</span>
-											<input type="text" value="1" size="5"/>
-											<span class="plus c-btn">+</span>
-										</div>
-									</div>
+				<div class="row mine-basket">
+					<div class="col-12 ">
+						<div class="row item hidden-sm-down">
+							<div class="col col-md">
+								<div class="title-f">
+									Изображение
 								</div>
 							</div>
-							<div class="col-12">
-								<div class="good-item">
-									<div class="discr-s">
-										<a href="">Apple watch 2 series
-											42 White</a>
-										<div class="prev" style="background-image: url('img/item2.png')"></div>
-									</div>
-
-									<div class="price">
-										26 500 ₧
-									</div>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="txt">
-											Количество
-										</div>
-										<div class="number">
-											<span class="minus c-btn">-</span>
-											<input type="text" value="1" size="5"/>
-											<span class="plus c-btn">+</span>
-										</div>
-									</div>
+							<div class="col col-md">
+								<div class="title-f">
+									Наименование
+								</div>
+							</div>
+							<div class="col col-md">
+								<div class="title-f">
+									Кол-во
+								</div>
+							</div>
+							<div class="col col-md">
+								<div class="title-f">
+									Цена
+								</div>
+							</div>
+							<div class="col col-md">
+								<div class="title-f">
+									Итого
 								</div>
 							</div>
 						</div>
+						<div class="row item">
+							<div class="col-12 col-md">
+								<div class="cont-field cont-field-bm">
+									<div class="prev-g" style="background-image: url('img/item2.png')">
+
+									</div>
+
+									<div class="remove-btn hidden-md-up">
+										<button>
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+												<path fill-rule="evenodd" fill="rgb(24, 21, 23)" d="M16.003,13.209 L10.796,8.003 L16.002,2.797 L13.203,-0.000 L7.998,5.206 L2.792,0.001 L-0.007,2.797 L5.200,8.004 L-0.006,13.210 L2.791,16.009 L7.998,10.801 L13.205,16.008 L16.003,13.209 Z"></path>
+											</svg>
+										</button>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-12 col-md">
+								<div class="cont-field">
+									<a href="">Apple watch 2 series
+										42 White
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="title-f hidden-md-up">
+									Кол-во
+								</div>
+								<div class="cont-field">
+									<div class="number">
+										<span class="minus c-btn">-</span>
+										<input type="text" placeholder="1" value="0" size="5"/>
+										<span class="plus c-btn">+</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="title-f hidden-md-up">
+									Цена
+								</div>
+								<div class="cont-field">
+									<div class="price">
+										26 500 ₧
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="title-f hidden-md-up">
+									Итого
+								</div>
+								<div class="cont-field remove-btn-c">
+									<div class="price">
+										26 500 ₧
+									</div>
+									<div class="remove-btn">
+										<button>
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+												<path fill-rule="evenodd" fill="rgb(24, 21, 23)" d="M16.003,13.209 L10.796,8.003 L16.002,2.797 L13.203,-0.000 L7.998,5.206 L2.792,0.001 L-0.007,2.797 L5.200,8.004 L-0.006,13.210 L2.791,16.009 L7.998,10.801 L13.205,16.008 L16.003,13.209 Z"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row item">
+							<div class="col-12 col-md">
+								<div class="cont-field cont-field-bm">
+									<div class="prev-g" style="background-image: url('img/item2.png')">
+
+									</div>
+
+									<div class="remove-btn hidden-md-up">
+										<button>
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+												<path fill-rule="evenodd" fill="rgb(24, 21, 23)" d="M16.003,13.209 L10.796,8.003 L16.002,2.797 L13.203,-0.000 L7.998,5.206 L2.792,0.001 L-0.007,2.797 L5.200,8.004 L-0.006,13.210 L2.791,16.009 L7.998,10.801 L13.205,16.008 L16.003,13.209 Z"></path>
+											</svg>
+										</button>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-12 col-md">
+								<div class="cont-field">
+									<a href="">Apple watch 2 series
+										42 White
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="title-f hidden-md-up">
+									Кол-во
+								</div>
+								<div class="cont-field">
+									<div class="number">
+										<span class="minus c-btn">-</span>
+										<input type="text" placeholder="1" value="0" size="5"/>
+										<span class="plus c-btn">+</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="title-f hidden-md-up">
+									Цена
+								</div>
+								<div class="cont-field">
+									<div class="price">
+										26 500 ₧
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="title-f hidden-md-up">
+									Итого
+								</div>
+								<div class="cont-field remove-btn-c">
+									<div class="price">
+										26 500 ₧
+									</div>
+									<div class="remove-btn">
+										<button>
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+												<path fill-rule="evenodd" fill="rgb(24, 21, 23)" d="M16.003,13.209 L10.796,8.003 L16.002,2.797 L13.203,-0.000 L7.998,5.206 L2.792,0.001 L-0.007,2.797 L5.200,8.004 L-0.006,13.210 L2.791,16.009 L7.998,10.801 L13.205,16.008 L16.003,13.209 Z"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row item">
+							<div class="col-12 col-md">
+								<div class="cont-field cont-field-bm">
+									<div class="prev-g" style="background-image: url('img/item2.png')">
+
+									</div>
+
+									<div class="remove-btn hidden-md-up">
+										<button>
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+												<path fill-rule="evenodd" fill="rgb(24, 21, 23)" d="M16.003,13.209 L10.796,8.003 L16.002,2.797 L13.203,-0.000 L7.998,5.206 L2.792,0.001 L-0.007,2.797 L5.200,8.004 L-0.006,13.210 L2.791,16.009 L7.998,10.801 L13.205,16.008 L16.003,13.209 Z"></path>
+											</svg>
+										</button>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-12 col-md">
+								<div class="cont-field">
+									<a href="">Apple watch 2 series
+										42 White
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="title-f hidden-md-up">
+									Кол-во
+								</div>
+								<div class="cont-field">
+									<div class="number">
+										<span class="minus c-btn">-</span>
+										<input type="text" placeholder="1" value="0" size="5"/>
+										<span class="plus c-btn">+</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="title-f hidden-md-up">
+									Цена
+								</div>
+								<div class="cont-field">
+									<div class="price">
+										26 500 ₧
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="title-f hidden-md-up">
+									Итого
+								</div>
+								<div class="cont-field remove-btn-c">
+									<div class="price">
+										26 500 ₧
+									</div>
+									<div class="remove-btn">
+										<button>
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+												<path fill-rule="evenodd" fill="rgb(24, 21, 23)" d="M16.003,13.209 L10.796,8.003 L16.002,2.797 L13.203,-0.000 L7.998,5.206 L2.792,0.001 L-0.007,2.797 L5.200,8.004 L-0.006,13.210 L2.791,16.009 L7.998,10.801 L13.205,16.008 L16.003,13.209 Z"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
-					<div class="col-12 col-md-6 col-lg-6">
+					<div class="col-12">
+						<div class="itogo-txt">
+							Итоговая стоимость <br> <b>53 000 ₧</b>
+						</div>
+						<div class="btn-c d-flex justify-content-end">
+							<button class="btn-accent" onclick="$('.step2-trigger').click();">
+								Оформить заказ
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="row order-form-b">
+					<div class="col">
 						<form class="stand-form">
 							<input type="hidden" name="theme" value="Описание заявки">
 							<label for="name2">Имя</label>
@@ -591,13 +770,13 @@
 							<input type="text" placeholder="Введите Email" id="email2" name="email2">
 
 							<label for="adress2">Адрес доставки</label>
-							<input type="text" id="adress2" name="adress2" placeholder="Город, улица, квартира">
+							<input type="text" id="adress2" name="adress2" placeholder="Адрес доставки - Город, улица, квартира">
 
 							<label for="phone2">Телефон</label>
-							<input type="tel" id="phone2" name="phone2">
+							<input type="tel" id="phone2" placeholder="Телефон" name="phone2">
 
 							<label for="message2">Что продать?</label>
-							<textarea name="message2" id="message2" cols="30" rows="10" placeholder="Напишите фирму, модель, комплектность
+							<textarea name="message2" id="message2" cols="30" rows="5" placeholder="Напишите фирму, модель, комплектность
 и состояние устройства"></textarea>
 
 							<p style="font-size: 12px" class="polit-ord">
@@ -607,6 +786,7 @@
 						</form>
 					</div>
 				</div>
+
 			</div>
 		</div>
 
@@ -1165,6 +1345,7 @@
 		/*For this page START*/
 		$(function() {
 
+			bascetScripts();
 		});
 		/*For this page END*/
 

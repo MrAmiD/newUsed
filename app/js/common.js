@@ -1,3 +1,29 @@
+function bascetScripts() {
+    $(document).on( "click", ".step2-trigger", function() {
+        $('.mine-basket').hide();
+        $('.order-form-b').fadeIn();
+        $('.steps-tr').removeClass('active');
+        $(this).addClass('active');
+    });
+    $(document).on( "click", ".step1-trigger", function() {
+        $('.order-form-b').hide();
+        $('.mine-basket').fadeIn();
+        $('.steps-tr').removeClass('active');
+        $(this).addClass('active');
+    });
+    $(document).on( "click", ".pers2-trigger", function() {
+        $('.fiz-face').hide();
+        $('.ur-face form').fadeIn();
+        $('.persons-tr').removeClass('active');
+        $(this).addClass('active');
+    });
+    $(document).on( "click", ".pers1-trigger", function() {
+        $('.ur-face form').hide();
+        $('.fiz-face').fadeIn();
+        $('.persons-tr').removeClass('active');
+        $(this).addClass('active');
+    });
+}
 function showConfig() {
     //allCfg
     $(document).on('click', '#allCfg', function () {

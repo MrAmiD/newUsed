@@ -6,6 +6,11 @@
 @media only screen and (max-width : 1200px)
   .socials
     margin-bottom: 1rem
+  .basket-container
+    .main-menu
+      order: 1
+      margin-top: 30px
+      padding: 0px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   .catalog .item-cont>.item .prev .fast-v
@@ -59,7 +64,20 @@
       max-width: 100%
       border-bottom: 1px solid $grey
       padding-bottom: 20px
-
+  .cont-field-bm
+    position: relative
+    .remove-btn
+      position: absolute
+      top: 0px
+      right: 0px
+      z-index: 999
+      button
+        background: transparent
+        cursor: pointer
+  .steps-cont
+    padding: 0 15px
+  .mine-basket .itogo-txt
+    font-size: 27px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .main-slider .item .slider-content .h2, .main-slider .item .slider-content h2
@@ -112,6 +130,14 @@
         display: block
         min-width: 700px
         width: 100%
+  .mine-basket
+    .item
+      .cont-field
+        min-height: 50px
+        &.remove-btn-c
+          min-height: 34px
+          .remove-btn
+            display: none
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -128,9 +154,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-  /**/
-
-
+  .order-form-b
+    .col
+      padding: 0px
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)

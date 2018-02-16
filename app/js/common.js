@@ -155,6 +155,9 @@ function eqRow() {
 }
 
 $(function() {
+
+    $('#msGallery .fotoramaMine').fotorama();
+ 
     $("input[name=phone], input[type=tel]").mask("+7 (999) 999 - 99 - 99");
 
     $('.minus').click(function () {
